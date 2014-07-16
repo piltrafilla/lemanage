@@ -1,6 +1,7 @@
 <div id="menu" ng-keypress="keyHandler($event)" >
-	<div id="mainMenu" ng-repeat="item in menuItems">
-		<a id="{{item.id}}" class="menuItem" href="item.url">{{item.name}}</a>
-	</div>
-	
+ <ul id="mainMenu">
+    <li ng-repeat="page in menuItems">
+      <a href="{{page.id}}" active-link="active">{{page.name}}</a>
+    </li>
+  </ul>
 </div>
